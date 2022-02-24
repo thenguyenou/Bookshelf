@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chi tiết sản phẩm</title>
+        <link rel="shortcut icon" type="image/png" href="image/logo.jpg"/>
+        <!-- <script src="script.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+h
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       
+        <!-- <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" /> -->
+        <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/01e2bbe2dc.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+        <link rel="stylesheet" type = "text/css" href="style.css" /> 
+        <script src="script.js"></script> 
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="image/logo.jpg" atl="logo"/>
+            </div>
+            <div class="center">
+                <div>
+                    <div class="search">
+                        <input type="text" placeholder="Nhập tên sách, tuyển tập, tác giả..."/>
+                        <input type="button" value="Tìm kiếm"/>
+                    </div>
+                </div>
+                <div class="nav" >
+                    <ul class="menu">
+                        <li>
+                            <a class ="list" href ="#"><i class="fa fa-list"></i> Danh mục</a>
+                            <ul class="submenu">
+                                <li><a href="#">Sách văn học</a></li>
+                                <li><a href="#">Sách thiếu nhi</a></li>
+                                <li><a href="#">Sách kinh doanh</a></li>
+                                <li><a href="#">Sách kỹ năng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href ="#">Sách mới nhất</a></li>
+                        <li><a href ="#">Sách giảm giá</a></li>
+                        <li><a href ="#">Sách mua nhiều</a></li>
+                        <li><a href ="#">Khuyên đọc</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class= "user">
+                <ul class="avatar">
+                    <li><a href ="#"><i class="fa fa-user"></i></a></li>
+                    <li class="avatar"><a href ="#">Tài khoản</a></li>
+                </ul>
+                <ul class="user-info">
+                    <li><a href="login.html">Đăng nhập</a></li>
+                    <li><a href="register.html">Đăng ký</a></li>
+
+                    <li> <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i>  | Đăng nhập bằng facebook</li></a> 
+                    <li> <a href="https://accounts.google.com/"> <i class="fa fa-google"></i> | Đăng nhập bằng google</li></a>
+                </ul>
+            </div>
+        </header>
+        <section class="sidebar">
+            <ul>
+                <li><a href="trangchu.html">
+                    <i class="fa fa-home" ></i>
+                </a></li>
+                <li><a href="cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa fa-phone"></i>
+                </a></li>
+                <li><a id="gototop" href="javascript:;">
+                    <i class="fa fa-arrow-up"></i>
+                </a></li>
+            </ul>
+        </section>
+        <hr>
+        <section class="container detail">
+            <div class="books">
+                <div class="book book_detail">
+                    <div id="book" >
+                        <div><a href="#"><img src="image/book_3.jpeg" alt="book" ></a></div>
+                        <div class="info">
+                            <ul class="info-detail">
+                                <li ><a href="https://book365.vn/sach/515470_me-xau.html" class="link-book"><b>Mẹ xấu</b></a></li>
+                                <li>Sung-Kyung Park/ Văn Ngọc Minh Quyên <i>(Tác giả)</i></li>
+                                <li>Văn Ngọc Minh Quyên <i>(Dịch giả)</i></li>
+                                <li>Giá: 54.400đ</li>
+                                <li>Sale : 30%</li>
+                                <li>Tags: Truyện ngắn của mẹ</li>
+                                <li>Tình trạng: hết hàng</li>
+                                <li><br></li>
+                                <li>
+                                    <div>
+                                        <div class="buy-detail">
+                                            <input type="button" value="Mua ngay"/>
+                                        </div>
+                                        <div class="add-cart-detail">
+                                            <input type="button" value="Thêm vào giỏ"/>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <br>
+                            <ul class="info-detail2" >
+                                <li><i class="fa fa-bullhorn"></i><b>  Thông báo với tôi khi có hàng</b></li>
+                                <li>Thông tin & Khuyến mãi</li>
+                                <li>Đổi trả hàng trong vòng 10 ngày</li>
+                                <li>Sử dụng 1000 xu để được giảm 10.000 vnd</li>
+                                <li>Ship hàng toàn quốc</li>
+                                <li><img src="image/star.png" alt="star" class="img-star"></li>
+                            </ul>
+                        </div>
+                        <div class="info-detail3">
+                            <ul>
+                                <li><i class="fa fa-heart"></i>  Thêm vào yêu thích</li>
+                                <li><i class="fa fa-user"></i>  Ưu đãi khách hàng thân thiết</li>
+                                <li><i class="fa fa-car"></i>  Để được miễn phí vận chuyển</li>
+                            </ul>
+                            <ul>Share để nhận xu - Mua hàng 0đ</ul>
+                            <ul>
+                                <li><i class="fa fa-thumbs-up"></i>Thích</li>
+                                <li><i class="fa fa-twitter"></i>Tweet</li>
+                                <li><i class="fa fa-pinterest"></i>Lưu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="container details" >
+            <div class="detail-left">
+                <div >
+                    <p><b>Thông tin chi tiết</b></p>
+                    <div>
+                        <ul>
+                            <li>Nhà xuất bản: NXB thế giới</li>
+                            <li>Ngày xuất bản: 1/1/2022</li>
+                            <li>Kích thước: 15 x 23 x 0.5</li>
+                            <li>Số trang: 182 trang</li>
+                            <li>Trọng lượng: 500g</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="choose_stars">
+                    <h6 style="color:#f7682d"><b>Nhận xét của khách hàng</b></h6>
+                    <div>
+                        <img  src="image/star.png" alt="star" class="img-star">
+                    </div>
+                    <div style="display:flex">
+                        <h5>1 sao</h5>
+                        <input type="text"/>
+                    </div>
+                    <div style="display:flex">
+                        <h5>2 sao</h5>
+                        <input  type="text"/>
+                    </div>
+                    <div style="display:flex">
+                        <h5>3 sao</h5>
+                        <input  type="text"/>
+                    </div>
+                    <div style="display:flex">
+                        <h5>4 sao</h5>
+                        <input type="text"/>
+                    </div>
+                    <div style="display:flex">
+                        <h5>5 sao</h5>
+                        <input  type="text"/>
+                    </div>
+                    <h7>Chưa có nhận xét</h7>
+                    <div style="text-align: center;">
+                        <input style="width:auto; height:100%;background-color:#f7682d; border-color: #f7682d;" type="submit" value="Viết nhận xét của bạn" />
+                    </div>
+                </div>
+                <div class="comments">
+                    <h6 style="color:#f7682d"><b>Bình luận</b></h4>
+                    <hr>
+                    <textarea type="text" placeholder="Bình luận..."></textarea>
+                </div>
+            </div>
+            <div class="books_banner" style="width: 30%;height:90%; padding:1%;border: none; margin-left: 1%; background: white;">
+                <p><b style="color:#f7682d">Sách cùng chủ đề</b></p>
+                <div class="book_banner" style="width: 100%;display:flex">
+                    <div>
+                        <span>Đọc thử  <i class="fa fa-level-down" aria-hidden="true"></i></span>
+                        <div >
+                            <div><a href="#"><img src="image/book_3.jpeg" alt="book" class="img-book_banner"></a></div>
+                        </div>
+                    </div>
+                    <div class="info" style="padding-top: 10%;background: white;">
+                        <h5 class="title-book"><a href="https://book365.vn/sach/515470_me-xau.html" class="link-book">Mẹ xấu</a></h3>
+                        <!-- <h7 class="author-book"> Sung-Kyung Park/ Văn Ngọc Minh Quyên</h4>    -->
+                        <h7 class="price-book">54.400đ</h4>
+                        <div>
+                            <img src="image/star.png" alt="star" class="img-star">
+                        </div>
+                    </div>
+                </div>
+                <div class="book_banner" style="width: 100%;display:flex">
+                    <div>
+                        <span>Đọc thử  <i class="fa fa-level-down" aria-hidden="true"></i></span>
+                        <div >
+                            <div><a href="#"><img src="image/book_3.jpeg" alt="book" class="img-book_banner"></a></div>
+                        </div>
+                    </div>
+                    <div class="info" style="padding-top: 10%;background: white;">
+                        <h5 class="title-book"><a href="https://book365.vn/sach/515470_me-xau.html" class="link-book">Mẹ xấu</a></h3>
+                        <!-- <h7 class="author-book"> Sung-Kyung Park/ Văn Ngọc Minh Quyên</h4>    -->
+                        <h7 class="price-book">54.400đ</h4>
+                        <div>
+                            <img src="image/star.png" alt="star" class="img-star">
+                        </div>
+                    </div>
+                </div>
+                <div class="book_banner" style="width: 100%;display:flex">
+                    <div>
+                        <span>Đọc thử  <i class="fa fa-level-down" aria-hidden="true"></i></span>
+                        <div >
+                            <div><a href="#"><img src="image/book_3.jpeg" alt="book" class="img-book_banner"></a></div>
+                        </div>
+                    </div>
+                    <div class="info" style="padding-top: 10%;background: white;">
+                        <h5 class="title-book"><a href="https://book365.vn/sach/515470_me-xau.html" class="link-book">Mẹ xấu</a></h3>
+                        <!-- <h7 class="author-book"> Sung-Kyung Park/ Văn Ngọc Minh Quyên</h4>    -->
+                        <h7 class="price-book">54.400đ</h4>
+                        <div>
+                            <img src="image/star.png" alt="star" class="img-star">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="container" style="display:flex; align-items: center;" >
+            <div style="width: 15%;">
+                <img src="image/letter.png"> 
+            </div>
+            <div style="width: 45%;">
+                <h5><b style="color:#f7682d">Đăng ký nhận bản tin từ gác sách</b></h5>
+                <h7>Đừng bỏ lỡ những tin nhắn ưu đãi độc quyền dành riêng cho bạn</h7>
+            </div>
+            <div style="display:flex; width:40%; height:20%">
+                <input style="width:90%" type="text" placeholder="Nhập địa chỉ email của bạn..."/>
+                <input type="button" value="Gửi"/>
+            </div>
+        </section>
+        
+        
+        <section class="container">
+            <div>
+                <ul class="Top1">
+                    <li><a href="#">Gác Sách </a></li>
+                    <li><a href="#">Top 1 Website ngành Sách tiêu biểu </a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <section  class="container">
+                <div class="head">
+                    <div class="pays">
+                        <div>
+                            <h4>Phuơng thức thanh toán</h4>
+                        </div>
+                        <div class="pay">
+                            <div><a href="#"><img class="img-pay"src="image/visa.png" alt="visa"></a></div>
+                            <div><a href="#"><img class="img-pay"src="image/mastercard.png" alt="mastercard"></a></div>
+                            <div><a href="#"><img class="img-pay"src="image/jcb.png" alt="jcb"></a></div>
+                            <div><a href="#"><img class="img-pay"src="image/cash.png" alt="cash"></a></div>
+                            <div><a href="#"><img class="img-pay"src="image/internet-banking.png" alt="internet-banking"></a></div>
+            
+                        </div>
+                    </div>
+                    <div><img src="image/sp_footer.png" /></div>
+                    <div class ="apps">
+                        <div>
+                            <h4>Tải ứng dụng trên</h4>
+                        </div>
+                        <div class="app">
+                            <div><a href="#"><img class="img-app" src="image/appstore.png" alt="appstore"></a></div>
+                            <div><a href="#"><img class="img-app"src="image/playstore.png" alt="playstore"></a></div>
+            
+                        </div>
+                    </div>
+                    <div><img src="image/sp_footer.png" /></div>
+                    <div class="connections">
+                        <div>
+                            <h4>Kết nối với chúng tôi</h4>
+                        </div>
+                        <div class="connection">
+                            <div><a href="#"><img class="img-connection" src="image/fb.png" alt="facebook"></a></div>
+                            <div><a href="#"><img class="img-connection"src="image/youtube.png" alt="youtube"></a></div>
+                            <div><a href="#"><img class="img-connection"src="image/zalo.png" alt="zalo"></a></div>
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="infos-footer">
+                    <div class="info-footer">
+                        <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+                        <ul class="support">
+                            <li><a href="#">Sản phẩm & Đơn hàng: 0123456789</a></li>
+                            <li><a href="#">Kỹ thuật & Bảo hành: 0987654321 </a></li>
+                            <li><a href="#">Điện thoại: 0123455432</a></li>
+                            <li><a href="#">Email: gachsach@gmail.com</a></li>
+                            <li><a href="#">Địa chỉ: 371 Nguyễn Kiệm, Gò vấp, TPHCM</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-footer">
+                        <h6>GÁC SÁCH</h6>
+                        <ul class="support">
+                            <li><a href="#">Giới thiệu Gác Sách</a></li>
+                            <li><a href="#">Liên hệ Gác Sách </a></li>
+                            <li><a href="#">Đặt hàng theo yêu cầu</a></li>
+                            <li><a href="#">Thỏa thuận sử dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-footer">
+                        <h6>TÀI KHOẢN CỦA BẠN</h6>
+                        <ul class="support">
+                            <li><a href="#">Cập nhật tài khoản</a></li>
+                            <li><a href="#">Giỏ hàng </a></li>
+                            <li><a href="#">Lịch sử giao dịch</a></li>
+                            <li><a href="#">Kiểm tra đơn hàng</a></li>
+                            <li><a href="#">Sản phẩm yêu thích</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-footer">
+                        <h6>TRỢ GIÚP</h6>
+                        <ul class="support">
+                            <li><a href="#">Đăng ký nhận bản tin</a></li>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Phương thức thanh toán</a></li>
+                            <li><a href="#">Phương thức vận chuyển</a></li>
+                            <li><a href="#">Chính sách đổi - trả</a></li>
+                            <li><a href="#">Chính sách bồi hoàn</a></li>
+                            <li><a href="#">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

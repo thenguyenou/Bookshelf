@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Đăng Ký</title>
+        <link rel="shortcut icon" type="image/png" href="image/logo.jpg"/>
+        <link rel="stylesheet" type = "text/css" href="register.css" /> 
+        <script src="script.js"></script> 
+    </head>
+    <body >   
+        <header class="">
+            <div class="logo">
+                <img  src="image/logo_GS.jpg" alt="gacsach">
+            </div>
+        </header> 
+        
+        <section class="register-content">
+            <section class="container ">
+                <div  class="title-content">
+                  <h2>  Đăng ký tài khoản Gác Sách</h2>
+                </div>
+
+                <div id="register-form">
+                    <input type="text" placeholder="Họ" class="half">        
+                    <input type="text" placeholder="Tên" class="half"><br> 
+                      <input type="text" placeholder="địa chỉ" class=""> <br>
+                     <input type="date" placeholder="Ngày sinh" class=""> <br>
+                     <div class="wrap_sex ">               
+
+                        <div>
+                        <input type="radio" id="female" name="sex" value="female"
+                                checked>
+                        <label for="Nam">Nam</label>
+                        </div>
+
+                        <div>
+                        <input type="radio" id="male" name="sex" value="male">
+                        <label for="Nu">Nữ </label>
+                        </div>
+                        <br>
+                  </div>                 
+                    <input type="tel" placeholder="Số điện thoại" pattern="[0-9]{10}" class=""> <br> 
+                    <input type="email" placeholder="Email"  class=""> <br>
+                    <input type="password" placeholder="Mật Khẩu" class=""> <br>
+                    <input type="password" placeholder=" Nhập lại Khẩu" class="">
+
+                    <div  class="register-go">
+                        <button onclick="register()"  type="submit" ><span>Đăng ký</span></button>
+                    </div>
+                    <div class="change-login">
+                        <a href="login.html">Đã có tài khoản!</a>
+                    </div>
+                   
+
+                </div>                
+                        
+            </section>
+            
+        </section>
+       
+        <footer>
+            <section  class="container">
+                <div class="head">
+                    <div class="pays">
+                        <div>
+                            <h4>Phuơng thức thanh toán</h4>
+                        </div>
+                        <div class="pay">
+                            <div><a href="#"><img class="img-pay"src="image/visa.png" alt="visa"></a></div>
+                            <div><a href="#"><img class="img-pay"src="image/mastercard.png" alt="mastercard"></a></div>
+                            <div><a href="#"><img class="img-pay"src="image/jcb.png" alt="jcb"></a></div>
+                            <div><a href="#"><img class="img-pay"src="image/cash.png" alt="cash"></a></div>
+                            <div><a href="#"><img class="img-pay"src="image/internet-banking.png" alt="internet-banking"></a></div>
+            
+                        </div>
+                    </div>
+                    <div><img src="image/sp_footer.png" /></div>
+                    <div class ="apps">
+                        <div>
+                            <h4>Tải ứng dụng trên</h4>
+                        </div>
+                        <div class="app">
+                            <div><a href="#"><img class="img-app" src="image/appstore.png" alt="appstore"></a></div>
+                            <div><a href="#"><img class="img-app"src="image/playstore.png" alt="playstore"></a></div>
+            
+                        </div>
+                    </div>
+                    <div><img src="image/sp_footer.png" /></div>
+                    <div class="connections">
+                        <div>
+                            <h4>Kết nối với chúng tôi</h4>
+                        </div>
+                        <div class="connection">
+                            <div><a href="#"><img class="img-connection" src="image/fb.png" alt="facebook"></a></div>
+                            <div><a href="#"><img class="img-connection"src="image/youtube.png" alt="youtube"></a></div>
+                            <div><a href="#"><img class="img-connection"src="image/zalo.png" alt="zalo"></a></div>
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="infos-footer">
+                    <div class="info-footer">
+                        <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+                        <ul class="support">
+                            <li><a href="#">Sản phẩm & Đơn hàng: 0123456789</a></li>
+                            <li><a href="#">Kỹ thuật & Bảo hành: 0987654321 </a></li>
+                            <li><a href="#">Điện thoại: 0123455432</a></li>
+                            <li><a href="#">Email: gachsach@gmail.com</a></li>
+                            <li><a href="#">Địa chỉ: 371 Nguyễn Kiệm, Gò vấp, TPHCM</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-footer">
+                        <h6>GÁC SÁCH</h6>
+                        <ul class="support">
+                            <li><a href="#">Giới thiệu Gác Sách</a></li>
+                            <li><a href="#">Liên hệ Gác Sách </a></li>
+                            <li><a href="#">Đặt hàng theo yêu cầu</a></li>
+                            <li><a href="#">Thỏa thuận sử dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-footer">
+                        <h6>TÀI KHOẢN CỦA BẠN</h6>
+                        <ul class="support">
+                            <li><a href="#">Cập nhật tài khoản</a></li>
+                            <li><a href="#">Giỏ hàng </a></li>
+                            <li><a href="#">Lịch sử giao dịch</a></li>
+                            <li><a href="#">Kiểm tra đơn hàng</a></li>
+                            <li><a href="#">Sản phẩm yêu thích</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-footer">
+                        <h6>TRỢ GIÚP</h6>
+                        <ul class="support">
+                            <li><a href="#">Đăng ký nhận bản tin</a></li>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Phương thức thanh toán</a></li>
+                            <li><a href="#">Phương thức vận chuyển</a></li>
+                            <li><a href="#">Chính sách đổi - trả</a></li>
+                            <li><a href="#">Chính sách bồi hoàn</a></li>
+                            <li><a href="#">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </footer>  
+    </body>
+
+
+</html>

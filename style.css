@@ -1,0 +1,1011 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eeeeee;
+}
+section.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto ;
+    padding: 0;   
+  
+}   
+
+/* CSS header */
+header { 
+    background-color: white;
+    display: flex;
+    align-items: center ;
+    box-sizing: border-box;
+    margin: 0px;
+    position: fixed;
+    padding: 0 10%;
+    top:0;
+    left:0;
+    z-index: 1000;
+    transition:all 0.5s ease-in-out;
+}
+header.container{
+    padding: 0;
+    background-color: white;
+    width: 100%;
+}
+header.sticky{
+    border-bottom: 5px solid #d6d7db;
+}
+header.sticky .center .search{
+    display: none;
+}
+header.sticky .center .nav .menu{
+    margin:1%;
+}
+header.sticky .logo img{
+    content: url(image/logo_GS.jpg);
+}
+header.sticky .user li.avatar {
+    display:none;
+}
+
+/* CSS logo */
+div.logo {
+    width: 10%;
+}
+div.logo img {
+    width: 100%;
+}
+
+/* CSS center */
+div.center {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding:0;
+}
+div.nav {
+    text-align: center;
+}
+
+ul.menu {
+    margin-bottom: 0;
+    margin-top: 3%;
+    position: relative;
+    list-style-type:none ;
+    display: flex;
+}
+ul.menu > li > a{
+    text-decoration: none;
+    display:block;
+    padding:0.5vw 2vw;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(#f2f4f3,#d6d7db);
+    color:  #354e75;
+}
+ul.menu > li > a:hover{
+    background: #354e75;
+    color: white;
+}
+ul.menu > li{
+    margin-right: 5px;
+}
+
+ul.submenu{
+    display: none;
+    background-color:#d6d7db !important;
+    width: 18%;
+    z-index: 999;
+    list-style-type: none;
+    padding:0px;
+    margin: 0;
+    text-decoration: none;
+}
+ul.submenu::after {
+    content: " ";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #d6d7db transparent;
+    position:absolute;
+    z-index: 999;
+    bottom: 100%;
+    left: 45%;
+}
+ul.menu > li:hover .submenu{
+    display: block;
+    position:absolute;
+}
+ul.submenu > li:hover{
+    background-color: #354e75;
+}
+ul.submenu > li > a{
+    text-decoration: none;
+    color:#354e75;
+}
+ul.submenu > li > a:hover{
+    color:white;
+}
+div.search {
+    margin-bottom: auto;
+}
+input[type="text"] {
+    width:50%;
+} 
+
+
+/* CSS user */
+div.user {
+    width:10%;
+    list-style-type: none;
+}
+div.user > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 5px 0;
+}
+div.user > ul > li > a{
+    text-decoration: none;
+    display: block;
+}
+ul.avatar li a{
+   
+    color:#354e75;
+}
+
+ul.user-info  {
+    background-color: lightgray;
+    padding: 20px;
+    position: absolute;
+    right: 10%;
+    display: none;
+    z-index: 999;
+}
+ul.user-info::after {
+    content: " ";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent lightgray transparent;
+    position: absolute;
+    bottom: 100%;
+    right: 20%;
+}
+div.user:hover ul.user-info {
+    display: block;
+}
+ul.user-info > li{
+    border:1px solid yellow;
+    padding:5px;
+    margin:10px;
+    border-radius: 5px;;
+    color:white;
+}
+ul.user-info > li:first-child{
+    background-color: yellow;
+}
+ul.user-info > li:nth-child(2){
+    background-color: yellow;
+}
+ul.user-info > li:nth-child(3) {
+
+    background-color:darkblue;
+    border:1px solid darkblue;
+}
+ul.user-info > li:last-child {
+    background-color:darkred;
+    border:1px solid darkred;
+}
+ul.user-info > li:nth-child(3) a,ul.user-info > li:nth-child(4) a{
+    color: white;
+}
+
+
+/* CSS sidebar */
+section.sidebar ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+section.sidebar > ul > li > a > i{
+    border: 1px solid #f7682d;
+    color:white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 3px;
+    background-color: #f7682d;
+    transition: transform 0.5s;
+}
+section.sidebar > ul > li:nth-child(even) > a > i{
+    background-color:#1dab8a;
+    border: 1px solid #1dab8a;
+}
+/* section.sidebar > ul > li > a#gototop {
+    display:none;
+} */
+section.sidebar{
+    position:fixed;
+    top: 30%;
+    right:0%;
+    z-index: 10000;
+    margin: 0;
+    padding: 0;
+}
+
+section.sidebar > ul > li > a > i:hover{
+    transform: scale(1.2);
+}
+
+
+ 
+/* CSS banner */
+div.carousel-item img{
+    width:100%
+}
+div.carousel.slide{
+    position: relative;
+    margin-top: 10%;
+}
+
+div.carousel-item div.book{
+    display:flex;
+}
+
+div.books_banner {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+
+}
+div.book_banner > div{
+    border-radius: 5px;
+}
+
+span.control-left{
+    border: 1px solid black;;
+    background-color:black;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left:10px;
+}
+span.control-right{
+    border: 1px solid black;;
+    background-color:black;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right:10px;
+}
+
+div.book_banner {
+    width: 20%;
+    height:auto;
+    text-align: center;
+    padding: 10px;
+}
+div#book_banner{
+    position: relative;
+}
+div.book_banner:hover div.detail{
+    right: 0;
+}
+img.img-book_banner{
+    width:100%;
+}
+
+div.detail input{
+    margin-top: 10%;
+}
+
+div.detail{
+    background-color: rgba(0, 0,0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom:0;
+    padding-top:20%;
+    left:0;
+    right: 100%;
+    transition: right 1s;
+    overflow: hidden;
+}
+div.detail h7{
+    color:white;
+}
+
+ 
+/* CSS subject */
+h2.subject {
+    border-bottom: 5px solid #354e75;
+    margin-top: 5%;
+}
+
+h2.subject > span {
+    background-color: #354e75;
+    color: white;
+    display: block;
+    width: 26%;
+    padding: 1%;
+    position: relative;
+}
+
+h2.subject > span::after {
+    content: " ";
+    border-width: 0.92em;
+    border-style: solid;
+    border-color: transparent transparent #354e75 #354e75;
+    position: absolute;
+    left: 100%;
+    bottom: 0px;
+}
+
+
+/* CSS book */
+div.books {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    background-color: white;
+    position: relative;
+}
+
+div.book {
+    width: 20%;
+    text-align: center;
+    padding:1%;
+    position: relative;
+    margin-bottom: 4%;
+}
+
+img.img-book{
+    position: relative;
+    width:80%;
+    margin:5px;
+    box-shadow: 0px 5px 15px gray;
+} 
+
+
+img.img-star {
+    width: 30%;
+    text-align: center;
+}
+div.info{
+    background: linear-gradient(#f2f4f3,#d6d7db);
+}
+div.info  h5 a{
+    color:#354e75;
+}
+
+div.book:hover div.detail-buy{
+    bottom:0;
+}
+
+div.detail-buy input:first-child{
+   margin-bottom: 5%;
+   border:1px solid #f2f4f3;
+   border-radius: 5%;
+   background: linear-gradient(#f2f4f3,#d6d7db);
+} 
+
+div.bt-buy{
+    position:absolute;
+    top:40%;
+    left:20%;
+}
+div.detail-buy{
+    position: absolute;
+    top: 0;
+    bottom:100%;
+    margin: 5%;
+    left:0;
+    right: 0;
+    transition: bottom 1s;
+    overflow: hidden;
+}
+div.see-more input{
+    position: absolute;
+    bottom:0;
+    text-align:center;
+    left:40%;
+    margin: 1%;
+
+}
+div.see-more input{
+    margin: 1%;
+    width: 100%;
+    
+}
+div.see-more{
+    position: absolute;
+    width: 20%;
+    left:30%;
+    bottom:0;
+    text-align:center;
+    margin-bottom: 5px;
+}
+
+
+
+/* CSS logo-move */
+div.logo-move{
+    padding:0;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+}
+section.container > div > h3{
+    margin-top: 5%;
+}
+div.logo-move > img{
+    animation: move 20s infinite;
+    position: relative;
+}
+
+@keyframes move{
+    from{
+        left: -100%;
+    }
+    to{
+        left:100%;
+    }
+}
+
+div.introduce{
+    display:flex;
+}
+div.introduce > div{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+div.video{
+    width: 50%;
+   
+}
+div.video iframe{
+   
+   width: 100%;
+   height: 100%;
+}
+ul.app-content{
+    list-style-type: none;
+}
+ul.app-content li::before{
+    content: url(image/icon_check.png);
+    padding-right: 1%;
+}
+
+
+ul.Top1{
+    list-style-type: none;
+    position: relative;
+    display:flex;
+    background: url(image/top1.png) no-repeat;
+    margin:3em auto 1em;
+    left:25%;
+    height: 2em;
+    width: 100%;
+    align-items: center;
+}
+ul.Top1 li a{
+    margin: 1em;
+    color: black;
+}
+
+
+
+
+/* CSS footer */
+footer{
+    background: #1dab8a;
+    padding-left: 5px;
+    
+}
+
+
+div.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.head div.pay{
+    display: flex; 
+}
+div.head div.pays {
+    width: 50%;
+    padding-right: 1em;
+}
+img.img-pay{
+    width: 90%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+div.head div.app {
+    display: flex;
+}
+div.head div.apps{
+    width: 25%;
+    padding: 0 1em;
+}
+img.img-app{
+    width: 100%;
+}
+div > h4{
+    color:white;
+}
+
+div.head div.connection{
+    display: flex;  
+}
+div.head div.connections{
+    width: 25%;
+    padding-left: 1em;
+}
+img.img-connection{
+    width: 70%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+
+
+ul.support {
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+ul.support li a{
+    color: white;
+    text-decoration :none;
+}
+div.info-footer h6{
+    color: white;
+}
+div.infos-footer{
+    display: flex; 
+    margin-top: 3em; 
+    justify-content: space-around;
+}
+
+div.info-footer{
+    padding-right: 1em;
+}
+
+
+/* CSS detail */
+.container.detail{
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+div.book_detail{
+    width: 100%;
+    
+}
+ul.info-detail{
+    list-style-type:none;
+}
+ul.info-detail li:last-child div{
+    display:flex;
+}
+div.book_detail > #book{
+    display: flex;
+    text-align: initial;
+}
+div.book_detail .info{
+    background: white;
+
+}
+div.buy-detail{
+    margin-right: 5%;
+}
+div.buy-detail input{
+    background-color:#f7682d;
+    border-color: #f7682d;
+}
+div.add-cart-detail input{
+    border-color:#1dab8a;
+     background-color: #1dab8a;
+}
+ul.info-detail2{
+    list-style-type: none;
+}
+div.info ul{
+    list-style-type: none;
+}
+div.info-detail3 ul{
+    list-style-type: none;
+}
+div.info-detail3 ul:last-child{
+    display:flex; 
+    list-style-type:none;
+     justify-content: space-around;
+}
+
+section.details{
+    display:flex;
+}
+div.detail-left{
+    width:70%;
+}
+div.detail-left div:first-child{
+    background: white;
+    padding:1%; 
+    margin-bottom: 2%;
+}
+div.detail-left div:first-child p b{
+    color:#f7682d;
+}
+div.detail-left div:first-child div ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+div.choose_stars{
+    padding:1%;
+    background:white;
+}
+div.choose_stars div img{
+    width:10%;
+}
+div.choose_stars div input{
+    width:10% ;
+    height:10px; 
+    margin:1%
+}
+
+div.comments{
+    background: white;
+    padding:1%;
+    margin-top:2%;
+    
+}
+div.comments > textarea{
+    width:100%;
+}
+
+
+
+/* CSS cart */
+.container.cart{
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+
+.cart-subject {
+    background: white; 
+    padding:1%;
+    text-align: center;
+}
+div.cart{
+    display: flex; 
+    background: white;
+    padding: 1%;
+}
+
+div.cart div:first-child{
+    width:10%;
+}
+div.cart div:nth-child(2) > h5 a{
+    color: #354e75;
+}
+
+div.cart div:nth-child(2){
+    width:20%;
+}
+div.cart div:nth-child(3){
+    width:30%;
+}
+div.cart div:nth-child(4){
+    width:20%;
+}
+div.cart div:nth-child(5){
+    width:20%;
+}
+.count{
+    width: 5%; 
+    margin: 0;
+     border: none;
+}
+
+.cart-subject h4{
+    color:#f7682d;
+}
+
+div.book_cart > #book{
+    display: flex;
+}
+div.book_cart .info{
+    background: white;
+    display: flex;
+}
+div.code-sales{
+    display:flex;
+    background: white;
+}
+div.code-sale{
+    border: 1px solid lightgray; 
+    width: 25%;padding:1%;
+}
+div.code-sale div{
+    display:flex;
+}
+div.code-sale div h8{
+    padding-right:1%;
+}
+div.code-sale div input{
+    width:40%;
+    height: 20px;
+}
+div.code-sale h6 b{
+    color:black
+}
+div.sum-money{
+    margin-left: auto;
+    padding: 1%;
+}
+div.sum-money input{
+    background-color:#f7682d;
+    border-color: #f7682d;
+}
+
+
+
+
+/* Responsive*/
+/* máy tính bản*/
+@media screen and (max-width : 900px) {
+  
+    div.head{
+        display: block;
+    }
+   
+    div.head div.pays, div.head div.apps,div.head div.connections {
+        width: 100%;
+    }
+    div.head div>img{
+        display: none;
+    }
+   
+    div.infos-footer {
+        flex-wrap: wrap;
+        width: 50%;
+       
+        
+    }
+   
+    ul.Top1{
+        display: none;
+    }
+   
+
+  
+    div.book{
+        width: 33%;
+    }
+    h2.subject > span{
+      width:   100%;
+     font-size:20px;
+    }
+    
+    section.sidebar{
+        position:fixed;
+        top: 21%;
+        right:0;
+    }
+    div.book_banner {
+        width: 25%;
+        
+    }
+    div.book_banner:last-child{
+        display: none;
+
+    }
+    ul.menu {
+        
+        flex-direction: column;
+    }
+  
+    ul.menu > li:nth-child(2){
+        display: none;
+    }
+    ul.menu > li:nth-child(3){
+        display: none;
+    }
+    ul.menu > li:nth-child(4){
+        display: none;
+    }
+    ul.menu > li:nth-child(5){
+        display: none;
+    }
+    header{
+        padding: 0;   
+        width: 100%;
+    }
+    div.center {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .center >div{
+        width: 50%;
+    }
+    header.sticky .center .search{
+        display: block;
+    }
+    ul.menu{
+        margin: 0;
+        padding: 0;
+
+    }
+    ul.menu li{ 
+        width: 100%;
+        font-size: 20px;
+    }
+    ul.submenu{     
+        width: 100%;
+       
+    }
+    div.search input[type="text"] {
+        width:70%;
+    } 
+    div.search input[type="button"] {
+        width:20%;
+    } 
+    ul.avatar li:last-child{
+        display: none;
+    }
+    ul.user-info::after{
+       
+        right: 10%;
+    }
+    ul.user-info {
+        right: 0;
+        display: none;
+        
+    }
+    ul.user-info > li{ 
+        padding:10px;
+        margin:10px;  
+        font-size: 16px;
+       
+    }
+  
+    
+    
+}
+/* điện thoại*/
+@media screen and (max-width : 600px) {
+  
+    div.head{
+        display: block;
+    }
+   
+    div.head div.pays, div.head div.apps,div.head div.connections {
+        width: 100%;
+    }
+    div.head div>img{
+        display: none;
+    }
+    div.infos-footer{
+        display: block;
+    }
+    ul.Top1{
+        display: none;
+    }
+    div.introduce{
+        display:block;
+    }
+    div.introduce >div{
+        width: 100%;
+    }
+  ul.app-content{
+      padding: 5px;
+  }
+    div.see-more {
+        display: none;
+    }
+    div.book{
+        width: 50%;
+    }
+    h2.subject > span{
+      width:   100%;
+     font-size:20px;
+    }
+    
+    section.sidebar{
+        position:fixed;
+        top: 21%;
+        right:0;
+    }
+    div.book_banner {
+        width: 50%;
+        
+    }
+    div.book_banner:last-child{
+        display: none;
+
+    }
+    ul.menu {
+        
+        flex-direction: column;
+    }
+  
+    ul.menu > li:nth-child(2){
+        display: none;
+    }
+    ul.menu > li:nth-child(3){
+        display: none;
+    }
+    ul.menu > li:nth-child(4){
+        display: none;
+    }
+    ul.menu > li:nth-child(5){
+        display: none;
+    }
+    header{
+        padding: 0;   
+        width: 100%;
+    }
+    div.center {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    header.sticky .center .search{
+        display: block;
+    }
+    ul.menu{
+        margin: 0;
+        padding: 0;
+
+    }
+    ul.menu li{
+        
+        width: 100%;
+        font-size: 14px;
+    }
+    ul.submenu{     
+        width: 100%;
+       
+    }
+    div.search input[type="text"] {
+        width:70%;
+    } 
+    div.search input[type="button"] {
+        width:20%;
+        font-size: small;
+    } 
+    ul.avatar li:last-child{
+        display: none;
+    }
+    ul.user-info::after{
+       
+        right: 5%;
+    }
+    ul.user-info {
+      
+        right: 0;
+        display: none;
+        
+    }
+    ul.user-info > li{ 
+        padding:0;
+        margin:5px;  
+        font-size: 13px;
+       
+    }
+    
+    
+}
+
+
+
