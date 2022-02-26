@@ -29,7 +29,7 @@ $(document).ready(function(){
 function go_TrangChu() {
     if(document.querySelector('#username').value == 'admin' && document.querySelector('#password').value == 'admin')
        {
-        window.open("trangChu.html","_self");
+        window.open("trangchu.html","_self");
         alert('Đăng nhập thành công!!');
        }
     else
@@ -49,7 +49,7 @@ $(document).ready(function(){
   // đăng ký
 
  function register() {
-    window.open("trangChu.html","_self");
+    window.open("trangchu.html","_self");
         alert('Đăng ký thành công!!');
 }
 
